@@ -13,7 +13,7 @@
 .wrapper {
     width: 1280px;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
 }
 
 #toggle {
@@ -34,12 +34,13 @@ nav .navbar-brand {
     font-family: 'Crimson Pro';
     color: #ffffff;
     height: 78px;
-    width: 80%;
+    width: 50%;
     padding: 0 95px;
     z-index: 99;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: .5px;
+    padding-left: 20px;
 }
 .navbar-brand p{
     display: flex;
@@ -61,16 +62,15 @@ nav .nav-list .nav-item {
     transition: .4s;
 }
 
-nav .nav-list .nav-item:hover {
-    border-radius: 20px;
-    height: 60px;
-    background-color: #181719;
-}
-
-nav .nav-list .nav-link {
+ .nav-link {
     color: #f1f1f1;
     font-size: 18px;
     font-weight: 500;
+}
+nav a:hover {
+    border-radius: 20px;
+    height: 60px;
+    font-weight: bolder;
 }
 
 
@@ -83,7 +83,9 @@ nav .nav-list .nav-link {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    padding-bottom: 38px;
+    padding-top: 50px;
+    height: 100%;
+    padding-bottom: 100px;
 }
 
 .main div:first-child {
@@ -131,7 +133,7 @@ span {
 .gmr {
     border: 1px solid;
     box-shadow:   5px 10px 8px #181719;    
-    height: 80px;
+    height: 100px;
     width: 250px;
     position: absolute;
     z-index: 1;
@@ -165,7 +167,7 @@ span {
 }
 
 footer {
-
+    padding-top: 50px;
     text-align: center;
     color:  #A9A9A9;
     font-family: 'Montserrat';
@@ -204,13 +206,11 @@ footer a:visited{
         height: 100vh;
     }
     footer{
-        height: 5vh;
     }
     .main {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        height: 90vh;
+        padding: 0;
     }
 
     .main1 P:first-child {
@@ -223,26 +223,28 @@ footer a:visited{
     }
 
     #i1 {
-        height: 220px;
+        height: 280px;
+        width: auto;
     }
 
     .gmr {
         top: 220px;
-        left: 80px;
+        left: 140px;
         width: 200px;
         height: 85px;
     }
 
-    .sake {}
+    .sake {
+        padding-top: 5px;
+    }
 
     nav {
         width: 100vw;
         background-color: #181719;
     }
 
-    nav .navbar-brand {
-        width: 80%;
-        visibility: hidden;
+        .navbar-brand {
+
     }
 
     nav .navbar-toggler {
@@ -267,10 +269,11 @@ footer a:visited{
 
     }
 
-    nav .nav-list .nav-item {
-        padding-left: 35px;
-
+    nav {
+        display: flex;
+        justify-content: space-between;
     }
+    
 
     
 }
@@ -290,6 +293,7 @@ nav .navbar-toggler {
     height: min-content;
     margin: 18px 0 0 0;
     cursor: pointer;
+    margin-left: 95px;
 }
 
 nav .navbar-toggler .bar {
